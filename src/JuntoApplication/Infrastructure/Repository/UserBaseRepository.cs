@@ -3,19 +3,23 @@ using JuntoApplication.Dto;
 using JuntoApplication.Infrastructure.DataBase;
 using JuntoApplication.Infrastructure.Repository.IRepository;
 using JuntoApplication.Model;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using System.Linq;
+using System.Security.Claims;
 
 namespace JuntoApplication.Infrastructure.Repository
 {
     public class UserBaseRepository : IUserBaseRepository
     {
         private readonly ApplicationDbContext _context;
+        private readonly UserManager<IdentityUser> _userManager;
         private readonly IMapper _mapper;
 
-        public UserBaseRepository(ApplicationDbContext context, IMapper mapper)
+        public UserBaseRepository(ApplicationDbContext context, UserManager<IdentityUser> userManager,
+            IMapper mapper)
         {
             _context = context;
+            _userManager = userManager;
             _mapper = mapper;
         }
 
@@ -56,11 +60,26 @@ namespace JuntoApplication.Infrastructure.Repository
             if (userDto.Role != null)
             {
                 var userAdmin = _mapper.Map<Admin>(userDto);
+                var adminUser = new IdentityUser { UserName = userDto.Email, Email = userDto.Email };
+                var result = await _userManager.CreateAsync(adminUser, userDto.Password);
 
-                _context.Add(userAdmin);
-                await _context.SaveChangesAsync();
+                if (result.Succeeded)
+                {                    
+                    await _userManager.AddToRoleAsync(adminUser, "Admin");
+                                        
+                    var adminClaims = new List<Claim>
+                    {
+                        new Claim(ClaimTypes.Email, userDto.Email),
+                        new Claim(ClaimTypes.Role, "Admin"),                    
+                    };
+                                        
+                    await _userManager.AddClaimsAsync(adminUser, adminClaims);
 
-                return _mapper.Map<UserDto>(userAdmin);
+                    _context.Add(userAdmin);
+                    await _context.SaveChangesAsync();
+
+                    return _mapper.Map<UserDto>(userAdmin);
+                }                
             }
 
             var user = _mapper.Map<User>(userDto);

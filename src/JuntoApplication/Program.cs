@@ -47,6 +47,7 @@ builder.Services.AddAuthentication(options =>
 
 builder.Services.AddSqlServer<ApplicationDbContext>(
     builder.Configuration["ConnectionStrings:JuntoTest"]);
+builder.Services.AddScoped<UserManager<IdentityUser>>();
 builder.Host.UseSerilog();
 builder.Services.AddScoped<IUserBaseRepository, UserBaseRepository>();
 builder.Services.AddScoped<ITokenRepository, TokenRepository>();
