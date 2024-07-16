@@ -1,0 +1,1144 @@
+2024-07-16 13:55:34.543 -03:00 [INF] Now listening on: https://localhost:7032
+2024-07-16 13:55:34.569 -03:00 [INF] Now listening on: http://localhost:5032
+2024-07-16 13:55:34.572 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 13:55:34.573 -03:00 [INF] Hosting environment: Development
+2024-07-16 13:55:34.573 -03:00 [INF] Content root path: D:\workspace\TesteJunto\src\JuntoApplication\
+2024-07-16 13:55:35.080 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/index.html - -
+2024-07-16 13:55:35.249 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/index.html - - - 200 - text/html;charset=utf-8 172.3689ms
+2024-07-16 13:55:35.258 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - -
+2024-07-16 13:55:35.261 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 2.5201ms
+2024-07-16 13:55:35.283 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - -
+2024-07-16 13:55:35.290 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.3165ms
+2024-07-16 13:55:35.332 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - -
+2024-07-16 13:55:35.397 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 65.5839ms
+2024-07-16 13:57:22.464 -03:00 [INF] Application is shutting down...
+2024-07-16 14:13:52.010 -03:00 [INF] User profile is available. Using 'C:\Users\Machado\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 14:13:52.060 -03:00 [INF] Creating key {b28d1b7f-9d98-42b0-b570-1f8ee0ea2cb9} with creation date 2024-07-16 17:13:52Z, activation date 2024-07-16 17:13:52Z, and expiration date 2024-10-14 17:13:52Z.
+2024-07-16 14:13:52.069 -03:00 [INF] Writing data to file 'C:\Users\Machado\AppData\Local\ASP.NET\DataProtection-Keys\key-b28d1b7f-9d98-42b0-b570-1f8ee0ea2cb9.xml'.
+2024-07-16 14:13:52.139 -03:00 [INF] Now listening on: https://localhost:7032
+2024-07-16 14:13:52.139 -03:00 [INF] Now listening on: http://localhost:5032
+2024-07-16 14:13:52.141 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 14:13:52.142 -03:00 [INF] Hosting environment: Development
+2024-07-16 14:13:52.142 -03:00 [INF] Content root path: D:\workspace\TesteJunto\src\JuntoApplication\
+2024-07-16 14:13:52.594 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/index.html - -
+2024-07-16 14:13:52.763 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/index.html - - - 200 - text/html;charset=utf-8 171.0534ms
+2024-07-16 14:13:52.772 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - -
+2024-07-16 14:13:52.774 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 2.2013ms
+2024-07-16 14:13:52.797 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - -
+2024-07-16 14:13:52.806 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 8.3332ms
+2024-07-16 14:13:52.849 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - -
+2024-07-16 14:13:52.915 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 65.8933ms
+2024-07-16 14:14:00.837 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/BaseUsers - -
+2024-07-16 14:14:00.863 -03:00 [INF] Executing endpoint 'JuntoApplication.Controllers.BaseUsersController.FindAll (JuntoApplication)'
+2024-07-16 14:14:00.879 -03:00 [INF] Route matched with {action = "FindAll", controller = "BaseUsers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] FindAll() on controller JuntoApplication.Controllers.BaseUsersController (JuntoApplication).
+2024-07-16 14:14:01.384 -03:00 [INF] Entity Framework Core 6.0.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.32' with options: None
+2024-07-16 14:14:01.667 -03:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Email], [a].[Name], [a].[Password], [a].[Role]
+FROM [Admins] AS [a]
+2024-07-16 14:14:01.714 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Cpf], [u].[Email], [u].[Name], [u].[Password]
+FROM [Users] AS [u]
+2024-07-16 14:14:01.726 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[JuntoApplication.Dto.UserDto, JuntoApplication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-07-16 14:14:01.742 -03:00 [INF] Executed action JuntoApplication.Controllers.BaseUsersController.FindAll (JuntoApplication) in 858.5119ms
+2024-07-16 14:14:01.743 -03:00 [INF] Executed endpoint 'JuntoApplication.Controllers.BaseUsersController.FindAll (JuntoApplication)'
+2024-07-16 14:14:01.745 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/api/BaseUsers - - - 200 - application/json;+charset=utf-8 908.2505ms
+2024-07-16 14:14:16.271 -03:00 [INF] Application is shutting down...
+2024-07-16 14:19:57.730 -03:00 [INF] User profile is available. Using 'C:\Users\Machado\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 14:19:57.832 -03:00 [INF] Now listening on: https://localhost:7032
+2024-07-16 14:19:57.832 -03:00 [INF] Now listening on: http://localhost:5032
+2024-07-16 14:19:57.835 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 14:19:57.835 -03:00 [INF] Hosting environment: Development
+2024-07-16 14:19:57.836 -03:00 [INF] Content root path: D:\workspace\TesteJunto\src\JuntoApplication\
+2024-07-16 14:19:58.283 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/index.html - -
+2024-07-16 14:19:58.454 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/index.html - - - 200 - text/html;charset=utf-8 171.9793ms
+2024-07-16 14:19:58.462 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - -
+2024-07-16 14:19:58.464 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 2.0181ms
+2024-07-16 14:19:58.489 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - -
+2024-07-16 14:19:58.496 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.5852ms
+2024-07-16 14:19:58.537 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - -
+2024-07-16 14:19:58.597 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 59.9958ms
+2024-07-16 14:20:02.338 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/BaseUsers - -
+2024-07-16 14:20:02.342 -03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-07-16 14:20:02.358 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-07-16 14:20:02.359 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/api/BaseUsers - - - 401 0 - 21.2192ms
+2024-07-16 14:56:17.407 -03:00 [INF] Application is shutting down...
+2024-07-16 16:19:51.294 -03:00 [INF] User profile is available. Using 'C:\Users\Machado\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 16:19:51.394 -03:00 [INF] Now listening on: https://localhost:7032
+2024-07-16 16:19:51.394 -03:00 [INF] Now listening on: http://localhost:5032
+2024-07-16 16:19:51.397 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 16:19:51.397 -03:00 [INF] Hosting environment: Development
+2024-07-16 16:19:51.398 -03:00 [INF] Content root path: D:\workspace\TesteJunto\src\JuntoApplication\
+2024-07-16 16:19:51.835 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/index.html - -
+2024-07-16 16:19:52.000 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/index.html - - - 200 - text/html;charset=utf-8 166.6130ms
+2024-07-16 16:19:52.007 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - -
+2024-07-16 16:19:52.009 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 1.9432ms
+2024-07-16 16:19:52.032 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - -
+2024-07-16 16:19:52.039 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.3563ms
+2024-07-16 16:19:52.080 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - -
+2024-07-16 16:19:52.092 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - JuntoApplication.Controllers.BaseUsersController.TokenGeneration (JuntoApplication). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-07-16 16:19:52.104 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 23.5355ms
+2024-07-16 16:20:08.021 -03:00 [INF] Application is shutting down...
+2024-07-16 16:20:31.039 -03:00 [INF] User profile is available. Using 'C:\Users\Machado\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 16:20:31.134 -03:00 [INF] Now listening on: https://localhost:7032
+2024-07-16 16:20:31.134 -03:00 [INF] Now listening on: http://localhost:5032
+2024-07-16 16:20:31.137 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 16:20:31.137 -03:00 [INF] Hosting environment: Development
+2024-07-16 16:20:31.138 -03:00 [INF] Content root path: D:\workspace\TesteJunto\src\JuntoApplication\
+2024-07-16 16:20:31.583 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/index.html - -
+2024-07-16 16:20:31.743 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/index.html - - - 200 - text/html;charset=utf-8 161.0720ms
+2024-07-16 16:20:31.750 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - -
+2024-07-16 16:20:31.752 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 1.8796ms
+2024-07-16 16:20:31.774 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - -
+2024-07-16 16:20:31.782 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.2809ms
+2024-07-16 16:20:31.819 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - -
+2024-07-16 16:20:31.879 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 60.1161ms
+2024-07-16 16:28:09.610 -03:00 [INF] Application is shutting down...
+2024-07-16 16:37:00.573 -03:00 [INF] User profile is available. Using 'C:\Users\Machado\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 16:37:00.675 -03:00 [INF] Now listening on: https://localhost:7032
+2024-07-16 16:37:00.675 -03:00 [INF] Now listening on: http://localhost:5032
+2024-07-16 16:37:00.678 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 16:37:00.678 -03:00 [INF] Hosting environment: Development
+2024-07-16 16:37:00.679 -03:00 [INF] Content root path: D:\workspace\TesteJunto\src\JuntoApplication\
+2024-07-16 16:37:01.132 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/index.html - -
+2024-07-16 16:37:01.298 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/index.html - - - 200 - text/html;charset=utf-8 167.1998ms
+2024-07-16 16:37:01.306 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - -
+2024-07-16 16:37:01.308 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 1.9705ms
+2024-07-16 16:37:01.331 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - -
+2024-07-16 16:37:01.338 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.5113ms
+2024-07-16 16:37:01.379 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - -
+2024-07-16 16:37:01.424 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - JuntoApplication.Controllers.LoginsController.Index (JuntoApplication). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-07-16 16:37:01.436 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 56.3998ms
+2024-07-16 16:41:05.220 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/index.html - -
+2024-07-16 16:41:05.228 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/index.html - - - 200 - text/html;charset=utf-8 7.7494ms
+2024-07-16 16:41:05.236 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - -
+2024-07-16 16:41:05.236 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - -
+2024-07-16 16:41:05.238 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 1.2937ms
+2024-07-16 16:41:05.239 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 3.4795ms
+2024-07-16 16:41:05.280 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - -
+2024-07-16 16:41:05.283 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - JuntoApplication.Controllers.LoginsController.Index (JuntoApplication). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-07-16 16:41:05.286 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 6.3130ms
+2024-07-16 16:41:56.099 -03:00 [INF] User profile is available. Using 'C:\Users\Machado\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 16:41:56.199 -03:00 [INF] Now listening on: https://localhost:7032
+2024-07-16 16:41:56.199 -03:00 [INF] Now listening on: http://localhost:5032
+2024-07-16 16:41:56.202 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 16:41:56.202 -03:00 [INF] Hosting environment: Development
+2024-07-16 16:41:56.203 -03:00 [INF] Content root path: D:\workspace\TesteJunto\src\JuntoApplication\
+2024-07-16 16:41:56.347 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/index.html - -
+2024-07-16 16:41:56.510 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/index.html - - - 200 - text/html;charset=utf-8 164.6457ms
+2024-07-16 16:41:56.512 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - -
+2024-07-16 16:41:56.514 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - -
+2024-07-16 16:41:56.515 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 1.7769ms
+2024-07-16 16:41:56.518 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 5.7760ms
+2024-07-16 16:41:56.554 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - -
+2024-07-16 16:41:56.599 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - JuntoApplication.Controllers.LoginsController.Index (JuntoApplication). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-07-16 16:41:56.611 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 56.3020ms
+2024-07-16 16:42:58.386 -03:00 [INF] User profile is available. Using 'C:\Users\Machado\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 16:42:58.490 -03:00 [INF] Now listening on: https://localhost:7032
+2024-07-16 16:42:58.490 -03:00 [INF] Now listening on: http://localhost:5032
+2024-07-16 16:42:58.493 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 16:42:58.493 -03:00 [INF] Hosting environment: Development
+2024-07-16 16:42:58.494 -03:00 [INF] Content root path: D:\workspace\TesteJunto\src\JuntoApplication\
+2024-07-16 16:42:58.966 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/index.html - -
+2024-07-16 16:42:59.136 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/index.html - - - 200 - text/html;charset=utf-8 171.2987ms
+2024-07-16 16:42:59.144 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - -
+2024-07-16 16:42:59.146 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 2.0255ms
+2024-07-16 16:42:59.170 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - -
+2024-07-16 16:42:59.178 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 8.4578ms
+2024-07-16 16:42:59.219 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - -
+2024-07-16 16:42:59.277 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 57.8856ms
+2024-07-16 16:43:27.931 -03:00 [INF] Application is shutting down...
+2024-07-16 16:47:15.140 -03:00 [INF] User profile is available. Using 'C:\Users\Machado\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 16:47:15.237 -03:00 [INF] Now listening on: https://localhost:7032
+2024-07-16 16:47:15.238 -03:00 [INF] Now listening on: http://localhost:5032
+2024-07-16 16:47:15.240 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 16:47:15.240 -03:00 [INF] Hosting environment: Development
+2024-07-16 16:47:15.241 -03:00 [INF] Content root path: D:\workspace\TesteJunto\src\JuntoApplication\
+2024-07-16 16:47:15.697 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/index.html - -
+2024-07-16 16:47:15.861 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/index.html - - - 200 - text/html;charset=utf-8 165.1026ms
+2024-07-16 16:47:15.868 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - -
+2024-07-16 16:47:15.870 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 1.9552ms
+2024-07-16 16:47:15.894 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - -
+2024-07-16 16:47:15.902 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.7847ms
+2024-07-16 16:47:15.945 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - -
+2024-07-16 16:47:16.007 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 61.6957ms
+2024-07-16 16:47:38.213 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7032/api/Logins/login application/json 50
+2024-07-16 16:47:38.233 -03:00 [INF] Executing endpoint 'JuntoApplication.Controllers.LoginsController.Login (JuntoApplication)'
+2024-07-16 16:47:38.257 -03:00 [INF] Route matched with {action = "Login", controller = "Logins"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JuntoApplication.Model.Login) on controller JuntoApplication.Controllers.LoginsController (JuntoApplication).
+2024-07-16 16:47:38.262 -03:00 [INF] Executed action JuntoApplication.Controllers.LoginsController.Login (JuntoApplication) in 1.1947ms
+2024-07-16 16:47:38.264 -03:00 [INF] Executed endpoint 'JuntoApplication.Controllers.LoginsController.Login (JuntoApplication)'
+2024-07-16 16:47:38.267 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'JuntoApplication.Infrastructure.Repository.IRepository.ITokenRepository' while attempting to activate 'JuntoApplication.Controllers.LoginsController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-07-16 16:47:38.288 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7032/api/Logins/login application/json 50 - 500 - text/plain;+charset=utf-8 74.4885ms
+2024-07-16 16:47:46.336 -03:00 [INF] Application is shutting down...
+2024-07-16 16:51:58.289 -03:00 [INF] User profile is available. Using 'C:\Users\Machado\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 16:51:58.388 -03:00 [INF] Now listening on: https://localhost:7032
+2024-07-16 16:51:58.389 -03:00 [INF] Now listening on: http://localhost:5032
+2024-07-16 16:51:58.391 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 16:51:58.392 -03:00 [INF] Hosting environment: Development
+2024-07-16 16:51:58.392 -03:00 [INF] Content root path: D:\workspace\TesteJunto\src\JuntoApplication\
+2024-07-16 16:51:58.888 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/index.html - -
+2024-07-16 16:51:59.056 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/index.html - - - 200 - text/html;charset=utf-8 169.1333ms
+2024-07-16 16:51:59.064 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - -
+2024-07-16 16:51:59.067 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 2.1534ms
+2024-07-16 16:51:59.090 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - -
+2024-07-16 16:51:59.098 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.9430ms
+2024-07-16 16:51:59.141 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - -
+2024-07-16 16:51:59.200 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 58.9283ms
+2024-07-16 16:53:25.473 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7032/api/Logins/login application/json 50
+2024-07-16 16:53:25.491 -03:00 [INF] Executing endpoint 'JuntoApplication.Controllers.LoginsController.Login (JuntoApplication)'
+2024-07-16 16:53:25.512 -03:00 [INF] Route matched with {action = "Login", controller = "Logins"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JuntoApplication.Model.Login) on controller JuntoApplication.Controllers.LoginsController (JuntoApplication).
+2024-07-16 16:53:25.517 -03:00 [INF] Executed action JuntoApplication.Controllers.LoginsController.Login (JuntoApplication) in 1.2121ms
+2024-07-16 16:53:25.519 -03:00 [INF] Executed endpoint 'JuntoApplication.Controllers.LoginsController.Login (JuntoApplication)'
+2024-07-16 16:53:25.522 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'TokenRepository' while attempting to activate 'JuntoApplication.Controllers.LoginsController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-07-16 16:53:25.539 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7032/api/Logins/login application/json 50 - 500 - text/plain;+charset=utf-8 66.3118ms
+2024-07-16 16:54:32.711 -03:00 [INF] Application is shutting down...
+2024-07-16 16:54:41.023 -03:00 [INF] User profile is available. Using 'C:\Users\Machado\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 16:54:41.132 -03:00 [INF] Now listening on: https://localhost:7032
+2024-07-16 16:54:41.133 -03:00 [INF] Now listening on: http://localhost:5032
+2024-07-16 16:54:41.135 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 16:54:41.136 -03:00 [INF] Hosting environment: Development
+2024-07-16 16:54:41.136 -03:00 [INF] Content root path: D:\workspace\TesteJunto\src\JuntoApplication\
+2024-07-16 16:55:16.182 -03:00 [INF] Application is shutting down...
+2024-07-16 16:55:28.053 -03:00 [INF] User profile is available. Using 'C:\Users\Machado\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 16:55:28.153 -03:00 [INF] Now listening on: https://localhost:7032
+2024-07-16 16:55:28.153 -03:00 [INF] Now listening on: http://localhost:5032
+2024-07-16 16:55:28.156 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 16:55:28.156 -03:00 [INF] Hosting environment: Development
+2024-07-16 16:55:28.157 -03:00 [INF] Content root path: D:\workspace\TesteJunto\src\JuntoApplication\
+2024-07-16 16:55:28.654 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/index.html - -
+2024-07-16 16:55:28.824 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/index.html - - - 200 - text/html;charset=utf-8 171.5225ms
+2024-07-16 16:55:28.832 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - -
+2024-07-16 16:55:28.834 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 1.8543ms
+2024-07-16 16:55:28.856 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - -
+2024-07-16 16:55:28.863 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.2081ms
+2024-07-16 16:55:28.903 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - -
+2024-07-16 16:55:28.964 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 61.3651ms
+2024-07-16 16:55:38.990 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7032/api/Logins/login application/json 50
+2024-07-16 16:55:39.009 -03:00 [INF] Executing endpoint 'JuntoApplication.Controllers.LoginsController.Login (JuntoApplication)'
+2024-07-16 16:55:39.031 -03:00 [INF] Route matched with {action = "Login", controller = "Logins"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JuntoApplication.Model.Login) on controller JuntoApplication.Controllers.LoginsController (JuntoApplication).
+2024-07-16 16:55:39.060 -03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-07-16 16:55:39.069 -03:00 [INF] Executed action JuntoApplication.Controllers.LoginsController.Login (JuntoApplication) in 34.7247ms
+2024-07-16 16:55:39.071 -03:00 [INF] Executed endpoint 'JuntoApplication.Controllers.LoginsController.Login (JuntoApplication)'
+2024-07-16 16:55:39.072 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7032/api/Logins/login application/json 50 - 401 - application/problem+json;+charset=utf-8 82.1520ms
+2024-07-16 16:55:48.605 -03:00 [INF] Application is shutting down...
+2024-07-16 17:57:31.470 -03:00 [INF] User profile is available. Using 'C:\Users\Machado\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 17:57:31.571 -03:00 [INF] Now listening on: https://localhost:7032
+2024-07-16 17:57:31.572 -03:00 [INF] Now listening on: http://localhost:5032
+2024-07-16 17:57:31.574 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 17:57:31.574 -03:00 [INF] Hosting environment: Development
+2024-07-16 17:57:31.575 -03:00 [INF] Content root path: D:\workspace\TesteJunto\src\JuntoApplication\
+2024-07-16 17:57:32.055 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/index.html - -
+2024-07-16 17:57:32.225 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/index.html - - - 200 - text/html;charset=utf-8 170.9909ms
+2024-07-16 17:57:32.230 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - -
+2024-07-16 17:57:32.232 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 1.9530ms
+2024-07-16 17:57:32.255 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - -
+2024-07-16 17:57:32.263 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.4781ms
+2024-07-16 17:57:32.301 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - -
+2024-07-16 17:57:32.371 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 70.0583ms
+2024-07-16 17:59:09.880 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7032/api/Logins/login application/json 119
+2024-07-16 17:59:09.899 -03:00 [INF] Executing endpoint 'JuntoApplication.Controllers.LoginsController.Login (JuntoApplication)'
+2024-07-16 17:59:09.919 -03:00 [INF] Route matched with {action = "Login", controller = "Logins"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JuntoApplication.Model.Login) on controller JuntoApplication.Controllers.LoginsController (JuntoApplication).
+2024-07-16 17:59:10.422 -03:00 [INF] Entity Framework Core 6.0.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.32' with options: None
+2024-07-16 17:59:10.740 -03:00 [INF] Executed DbCommand (32ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-16 17:59:10.760 -03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-07-16 17:59:10.770 -03:00 [INF] Executed action JuntoApplication.Controllers.LoginsController.Login (JuntoApplication) in 848.3904ms
+2024-07-16 17:59:10.771 -03:00 [INF] Executed endpoint 'JuntoApplication.Controllers.LoginsController.Login (JuntoApplication)'
+2024-07-16 17:59:10.774 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7032/api/Logins/login application/json 119 - 401 - application/problem+json;+charset=utf-8 894.0410ms
+2024-07-16 17:59:33.283 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7032/api/Logins/login application/json 50
+2024-07-16 17:59:33.284 -03:00 [INF] Executing endpoint 'JuntoApplication.Controllers.LoginsController.Login (JuntoApplication)'
+2024-07-16 17:59:33.285 -03:00 [INF] Route matched with {action = "Login", controller = "Logins"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JuntoApplication.Model.Login) on controller JuntoApplication.Controllers.LoginsController (JuntoApplication).
+2024-07-16 17:59:33.313 -03:00 [INF] Entity Framework Core 6.0.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.32' with options: None
+2024-07-16 17:59:33.319 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-16 17:59:33.320 -03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-07-16 17:59:33.321 -03:00 [INF] Executed action JuntoApplication.Controllers.LoginsController.Login (JuntoApplication) in 35.1096ms
+2024-07-16 17:59:33.322 -03:00 [INF] Executed endpoint 'JuntoApplication.Controllers.LoginsController.Login (JuntoApplication)'
+2024-07-16 17:59:33.323 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7032/api/Logins/login application/json 50 - 401 - application/problem+json;+charset=utf-8 39.8034ms
+2024-07-16 18:08:05.657 -03:00 [INF] Application is shutting down...
+2024-07-16 18:08:35.462 -03:00 [INF] User profile is available. Using 'C:\Users\Machado\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 18:08:35.898 -03:00 [INF] Entity Framework Core 6.0.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.32' with options: None
+2024-07-16 18:08:36.248 -03:00 [INF] Executed DbCommand (33ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-07-16 18:08:36.272 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-07-16 18:08:36.362 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2, @p3);
+2024-07-16 18:08:36.385 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-16 18:08:36.394 -03:00 [WRN] User password validation failed: PasswordRequiresDigit.
+2024-07-16 18:08:36.411 -03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2024-07-16 18:08:36.429 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__p_0) AND ([a].[RoleId] = @__p_1)
+2024-07-16 18:08:36.433 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2024-07-16 18:08:36.453 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-16 18:08:36.503 -03:00 [ERR] Failed executing DbCommand (16ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+2024-07-16 18:08:36.522 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'JuntoApplication.Infrastructure.DataBase.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_AspNetUserRoles_AspNetUsers_UserId". The conflict occurred in database "JuntoTest", table "dbo.AspNetUsers", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__189_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:ee737eb6-8b63-43bf-8cfb-a152edcd491f
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_AspNetUserRoles_AspNetUsers_UserId". The conflict occurred in database "JuntoTest", table "dbo.AspNetUsers", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__189_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:ee737eb6-8b63-43bf-8cfb-a152edcd491f
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-07-16 18:08:36.532 -03:00 [ERR] An error occurred while creating the admin user.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_AspNetUserRoles_AspNetUsers_UserId". The conflict occurred in database "JuntoTest", table "dbo.AspNetUsers", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__189_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:ee737eb6-8b63-43bf-8cfb-a152edcd491f
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.UpdateAsync(TUser user, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.UpdateUserAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.AddToRoleAsync(TUser user, String role)
+   at JuntoApplication.Infrastructure.DataBase.DbInitializer.Initialize(IServiceProvider serviceProvider) in D:\workspace\TesteJunto\src\JuntoApplication\Infrastructure\DataBase\DbInitializer.cs:line 27
+   at Program.<Main>$(String[] args) in D:\workspace\TesteJunto\src\JuntoApplication\Program.cs:line 107
+2024-07-16 18:08:36.612 -03:00 [INF] Now listening on: https://localhost:7032
+2024-07-16 18:08:36.612 -03:00 [INF] Now listening on: http://localhost:5032
+2024-07-16 18:08:36.613 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 18:08:36.613 -03:00 [INF] Hosting environment: Development
+2024-07-16 18:08:36.614 -03:00 [INF] Content root path: D:\workspace\TesteJunto\src\JuntoApplication\
+2024-07-16 18:08:37.494 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/index.html - -
+2024-07-16 18:08:37.660 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/index.html - - - 200 - text/html;charset=utf-8 169.0462ms
+2024-07-16 18:08:37.662 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - -
+2024-07-16 18:08:37.664 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 2.1387ms
+2024-07-16 18:08:37.694 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - -
+2024-07-16 18:08:37.702 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 8.0404ms
+2024-07-16 18:08:37.747 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - -
+2024-07-16 18:08:37.830 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 82.5989ms
+2024-07-16 18:09:57.977 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7032/api/Logins/login application/json 59
+2024-07-16 18:09:57.998 -03:00 [INF] Executing endpoint 'JuntoApplication.Controllers.LoginsController.Login (JuntoApplication)'
+2024-07-16 18:09:58.016 -03:00 [INF] Route matched with {action = "Login", controller = "Logins"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JuntoApplication.Model.Login) on controller JuntoApplication.Controllers.LoginsController (JuntoApplication).
+2024-07-16 18:09:58.070 -03:00 [INF] Entity Framework Core 6.0.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.32' with options: None
+2024-07-16 18:09:58.074 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-16 18:09:58.081 -03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-07-16 18:09:58.091 -03:00 [INF] Executed action JuntoApplication.Controllers.LoginsController.Login (JuntoApplication) in 70.8035ms
+2024-07-16 18:09:58.092 -03:00 [INF] Executed endpoint 'JuntoApplication.Controllers.LoginsController.Login (JuntoApplication)'
+2024-07-16 18:09:58.094 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7032/api/Logins/login application/json 59 - 401 - application/problem+json;+charset=utf-8 117.0437ms
+2024-07-16 18:10:08.542 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7032/api/Logins/login application/json 49
+2024-07-16 18:10:08.544 -03:00 [INF] Executing endpoint 'JuntoApplication.Controllers.LoginsController.Login (JuntoApplication)'
+2024-07-16 18:10:08.545 -03:00 [INF] Route matched with {action = "Login", controller = "Logins"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JuntoApplication.Model.Login) on controller JuntoApplication.Controllers.LoginsController (JuntoApplication).
+2024-07-16 18:10:08.554 -03:00 [INF] Entity Framework Core 6.0.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.32' with options: None
+2024-07-16 18:10:08.558 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-16 18:10:08.561 -03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-07-16 18:10:08.562 -03:00 [INF] Executed action JuntoApplication.Controllers.LoginsController.Login (JuntoApplication) in 15.1605ms
+2024-07-16 18:10:08.562 -03:00 [INF] Executed endpoint 'JuntoApplication.Controllers.LoginsController.Login (JuntoApplication)'
+2024-07-16 18:10:08.563 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7032/api/Logins/login application/json 49 - 401 - application/problem+json;+charset=utf-8 21.1522ms
+2024-07-16 18:12:42.724 -03:00 [INF] User profile is available. Using 'C:\Users\Machado\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 18:12:43.156 -03:00 [INF] Entity Framework Core 6.0.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.32' with options: None
+2024-07-16 18:12:43.493 -03:00 [INF] Executed DbCommand (28ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-07-16 18:12:43.544 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-16 18:12:43.553 -03:00 [WRN] User password validation failed: PasswordRequiresDigit.
+2024-07-16 18:12:43.558 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2024-07-16 18:12:43.571 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__p_0) AND ([a].[RoleId] = @__p_1)
+2024-07-16 18:12:43.575 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2024-07-16 18:12:43.601 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-16 18:12:43.683 -03:00 [ERR] Failed executing DbCommand (3ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+2024-07-16 18:12:43.704 -03:00 [ERR] An exception occurred in the database while saving changes for context type 'JuntoApplication.Infrastructure.DataBase.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_AspNetUserRoles_AspNetUsers_UserId". The conflict occurred in database "JuntoTest", table "dbo.AspNetUsers", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__189_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:30607968-6520-49af-9641-1d2a988d0ba7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_AspNetUserRoles_AspNetUsers_UserId". The conflict occurred in database "JuntoTest", table "dbo.AspNetUsers", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__189_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:30607968-6520-49af-9641-1d2a988d0ba7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-07-16 18:12:43.714 -03:00 [ERR] An error occurred while creating the admin user.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_AspNetUserRoles_AspNetUsers_UserId". The conflict occurred in database "JuntoTest", table "dbo.AspNetUsers", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__189_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:30607968-6520-49af-9641-1d2a988d0ba7
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.UpdateAsync(TUser user, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.UpdateUserAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.AddToRoleAsync(TUser user, String role)
+   at JuntoApplication.Infrastructure.DataBase.DbInitializer.Initialize(IServiceProvider serviceProvider) in D:\workspace\TesteJunto\src\JuntoApplication\Infrastructure\DataBase\DbInitializer.cs:line 27
+   at Program.<Main>$(String[] args) in D:\workspace\TesteJunto\src\JuntoApplication\Program.cs:line 107
+2024-07-16 18:12:43.790 -03:00 [INF] Now listening on: https://localhost:7032
+2024-07-16 18:12:43.791 -03:00 [INF] Now listening on: http://localhost:5032
+2024-07-16 18:12:43.792 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 18:12:43.792 -03:00 [INF] Hosting environment: Development
+2024-07-16 18:12:43.793 -03:00 [INF] Content root path: D:\workspace\TesteJunto\src\JuntoApplication\
+2024-07-16 18:12:43.917 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/index.html - -
+2024-07-16 18:12:44.075 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/index.html - - - 200 - text/html;charset=utf-8 159.7159ms
+2024-07-16 18:12:44.080 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - -
+2024-07-16 18:12:44.080 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - -
+2024-07-16 18:12:44.082 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 2.4626ms
+2024-07-16 18:12:44.087 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.1838ms
+2024-07-16 18:12:44.157 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - -
+2024-07-16 18:12:44.212 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 55.6594ms
+2024-07-16 18:28:32.813 -03:00 [INF] User profile is available. Using 'C:\Users\Machado\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 18:28:33.249 -03:00 [INF] Entity Framework Core 6.0.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.32' with options: None
+2024-07-16 18:28:33.583 -03:00 [INF] Executed DbCommand (26ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-07-16 18:28:33.607 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-07-16 18:28:33.688 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2, @p3);
+2024-07-16 18:28:33.709 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-16 18:28:33.718 -03:00 [WRN] User password validation failed: PasswordRequiresDigit.
+2024-07-16 18:28:33.723 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2024-07-16 18:28:33.726 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2024-07-16 18:28:33.729 -03:00 [ERR] An error occurred while creating the admin user.
+System.InvalidOperationException: Role JUNTO$ does not exist.
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.AddToRoleAsync(TUser user, String normalizedRoleName, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.AddToRoleAsync(TUser user, String role)
+   at JuntoApplication.Infrastructure.DataBase.DbInitializer.Initialize(IServiceProvider serviceProvider) in D:\workspace\TesteJunto\src\JuntoApplication\Infrastructure\DataBase\DbInitializer.cs:line 27
+   at Program.<Main>$(String[] args) in D:\workspace\TesteJunto\src\JuntoApplication\Program.cs:line 107
+2024-07-16 18:28:33.812 -03:00 [INF] Now listening on: https://localhost:7032
+2024-07-16 18:28:33.812 -03:00 [INF] Now listening on: http://localhost:5032
+2024-07-16 18:28:33.813 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 18:28:33.813 -03:00 [INF] Hosting environment: Development
+2024-07-16 18:28:33.814 -03:00 [INF] Content root path: D:\workspace\TesteJunto\src\JuntoApplication\
+2024-07-16 18:28:34.340 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/index.html - -
+2024-07-16 18:28:34.502 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/index.html - - - 200 - text/html;charset=utf-8 164.0985ms
+2024-07-16 18:28:34.509 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - -
+2024-07-16 18:28:34.511 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 2.1639ms
+2024-07-16 18:28:34.535 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - -
+2024-07-16 18:28:34.542 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.5757ms
+2024-07-16 18:28:34.581 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - -
+2024-07-16 18:28:34.643 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 62.3264ms
+2024-07-16 18:30:48.261 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7032/api/Login/login application/json 59
+2024-07-16 18:30:48.280 -03:00 [INF] Executing endpoint 'JuntoApplication.Controllers.LoginController.Login (JuntoApplication)'
+2024-07-16 18:30:48.297 -03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JuntoApplication.Model.Login) on controller JuntoApplication.Controllers.LoginController (JuntoApplication).
+2024-07-16 18:30:48.352 -03:00 [INF] Entity Framework Core 6.0.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.32' with options: None
+2024-07-16 18:30:48.358 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-16 18:30:48.365 -03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-07-16 18:30:48.376 -03:00 [INF] Executed action JuntoApplication.Controllers.LoginController.Login (JuntoApplication) in 74.7094ms
+2024-07-16 18:30:48.377 -03:00 [INF] Executed endpoint 'JuntoApplication.Controllers.LoginController.Login (JuntoApplication)'
+2024-07-16 18:30:48.379 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7032/api/Login/login application/json 59 - 401 - application/problem+json;+charset=utf-8 117.9870ms
+2024-07-16 18:33:46.193 -03:00 [INF] Application is shutting down...
+2024-07-16 18:43:08.271 -03:00 [INF] User profile is available. Using 'C:\Users\Machado\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 18:43:08.703 -03:00 [INF] Entity Framework Core 6.0.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.32' with options: None
+2024-07-16 18:43:09.042 -03:00 [INF] Executed DbCommand (27ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-07-16 18:43:09.066 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-07-16 18:43:09.148 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([Id], [ConcurrencyStamp], [Name], [NormalizedName])
+VALUES (@p0, @p1, @p2, @p3);
+2024-07-16 18:43:09.171 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-16 18:43:09.195 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-16 18:43:09.229 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2024-07-16 18:43:09.241 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2024-07-16 18:43:09.259 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__p_0) AND ([a].[RoleId] = @__p_1)
+2024-07-16 18:43:09.263 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2024-07-16 18:43:09.281 -03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-07-16 18:43:09.290 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+2024-07-16 18:43:09.303 -03:00 [INF] Executed DbCommand (11ms) [Parameters=[@p14='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p15='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13
+WHERE [Id] = @p14 AND [ConcurrencyStamp] = @p15;
+SELECT @@ROWCOUNT;
+2024-07-16 18:43:09.383 -03:00 [INF] Now listening on: https://localhost:7032
+2024-07-16 18:43:09.384 -03:00 [INF] Now listening on: http://localhost:5032
+2024-07-16 18:43:09.386 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 18:43:09.387 -03:00 [INF] Hosting environment: Development
+2024-07-16 18:43:09.387 -03:00 [INF] Content root path: D:\workspace\TesteJunto\src\JuntoApplication\
+2024-07-16 18:43:09.480 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/index.html - -
+2024-07-16 18:43:09.634 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/index.html - - - 200 - text/html;charset=utf-8 156.0741ms
+2024-07-16 18:43:09.638 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - -
+2024-07-16 18:43:09.638 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - -
+2024-07-16 18:43:09.640 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 2.4489ms
+2024-07-16 18:43:09.644 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 6.2483ms
+2024-07-16 18:43:09.768 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - -
+2024-07-16 18:43:09.824 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 55.7577ms
+2024-07-16 18:43:45.698 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7032/api/Login/login application/json 64
+2024-07-16 18:43:45.721 -03:00 [INF] Executing endpoint 'JuntoApplication.Controllers.LoginController.Login (JuntoApplication)'
+2024-07-16 18:43:45.740 -03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JuntoApplication.Model.Login) on controller JuntoApplication.Controllers.LoginController (JuntoApplication).
+2024-07-16 18:43:45.794 -03:00 [INF] Entity Framework Core 6.0.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.32' with options: None
+2024-07-16 18:43:45.802 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-16 18:43:45.845 -03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-07-16 18:43:45.862 -03:00 [INF] Executed action JuntoApplication.Controllers.LoginController.Login (JuntoApplication) in 117.797ms
+2024-07-16 18:43:45.863 -03:00 [INF] Executed endpoint 'JuntoApplication.Controllers.LoginController.Login (JuntoApplication)'
+2024-07-16 18:43:45.866 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.TypeInitializationException: The type initializer for 'System.IdentityModel.Tokens.Jwt.JsonExtensions' threw an exception.
+ ---> System.TypeLoadException: Could not load type 'Microsoft.IdentityModel.Json.JsonConvert' from assembly 'Microsoft.IdentityModel.Tokens, Version=8.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35'.
+   at System.IdentityModel.Tokens.Jwt.JsonExtensions..cctor()
+   --- End of inner exception stack trace ---
+   at System.IdentityModel.Tokens.Jwt.JsonExtensions.get_Serializer()
+   at System.IdentityModel.Tokens.Jwt.JsonExtensions.SerializeToJson(Object value)
+   at System.IdentityModel.Tokens.Jwt.JwtPayload.SerializeToJson()
+   at System.IdentityModel.Tokens.Jwt.JwtPayload.Base64UrlEncode()
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityToken.get_EncodedPayload()
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(SecurityToken token)
+   at TokenRepository.Authenticate(String email, String password) in D:\workspace\TesteJunto\src\JuntoApplication\Infrastructure\Repository\TokenRepository.cs:line 49
+   at JuntoApplication.Controllers.LoginController.Login(Login request) in D:\workspace\TesteJunto\src\JuntoApplication\Controllers\LoginController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-07-16 18:43:45.888 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7032/api/Login/login application/json 64 - 500 - text/plain;+charset=utf-8 189.7874ms
+2024-07-16 18:44:24.878 -03:00 [INF] Application is shutting down...
+2024-07-16 18:46:01.935 -03:00 [INF] User profile is available. Using 'C:\Users\Machado\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 18:46:02.371 -03:00 [INF] Entity Framework Core 6.0.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.32' with options: None
+2024-07-16 18:46:02.709 -03:00 [INF] Executed DbCommand (26ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-07-16 18:46:02.762 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-16 18:46:02.845 -03:00 [INF] Now listening on: https://localhost:7032
+2024-07-16 18:46:02.846 -03:00 [INF] Now listening on: http://localhost:5032
+2024-07-16 18:46:02.848 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 18:46:02.849 -03:00 [INF] Hosting environment: Development
+2024-07-16 18:46:02.849 -03:00 [INF] Content root path: D:\workspace\TesteJunto\src\JuntoApplication\
+2024-07-16 18:46:03.575 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/index.html - -
+2024-07-16 18:46:03.732 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/index.html - - - 200 - text/html;charset=utf-8 159.0593ms
+2024-07-16 18:46:03.740 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - -
+2024-07-16 18:46:03.742 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 2.0130ms
+2024-07-16 18:46:03.773 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - -
+2024-07-16 18:46:03.780 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.5773ms
+2024-07-16 18:46:03.874 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - -
+2024-07-16 18:46:03.931 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 57.4508ms
+2024-07-16 18:46:28.240 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7032/api/Login/login application/json 64
+2024-07-16 18:46:28.261 -03:00 [INF] Executing endpoint 'JuntoApplication.Controllers.LoginController.Login (JuntoApplication)'
+2024-07-16 18:46:28.278 -03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JuntoApplication.Model.Login) on controller JuntoApplication.Controllers.LoginController (JuntoApplication).
+2024-07-16 18:46:28.327 -03:00 [INF] Entity Framework Core 6.0.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.32' with options: None
+2024-07-16 18:46:28.331 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-16 18:46:28.369 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-07-16 18:46:28.390 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-07-16 18:46:28.402 -03:00 [INF] Executed action JuntoApplication.Controllers.LoginController.Login (JuntoApplication) in 120.7801ms
+2024-07-16 18:46:28.403 -03:00 [INF] Executed endpoint 'JuntoApplication.Controllers.LoginController.Login (JuntoApplication)'
+2024-07-16 18:46:28.405 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7032/api/Login/login application/json 64 - 200 - application/json;+charset=utf-8 165.1517ms
+2024-07-16 18:47:00.016 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/BaseUsers - -
+2024-07-16 18:47:00.020 -03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-07-16 18:47:00.026 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-07-16 18:47:00.027 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/api/BaseUsers - - - 401 0 - 11.7921ms
+2024-07-16 18:47:31.386 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/BaseUsers - -
+2024-07-16 18:47:31.387 -03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-07-16 18:47:31.389 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-07-16 18:47:31.391 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/api/BaseUsers - - - 401 0 - 4.6049ms
+2024-07-16 18:47:59.231 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/BaseUsers - -
+2024-07-16 18:47:59.232 -03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-07-16 18:47:59.233 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-07-16 18:47:59.233 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/api/BaseUsers - - - 401 0 - 2.7632ms
+2024-07-16 18:48:07.598 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/BaseUsers - -
+2024-07-16 18:48:07.598 -03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-07-16 18:48:07.599 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-07-16 18:48:07.600 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/api/BaseUsers - - - 401 0 - 2.1862ms
+2024-07-16 18:48:19.836 -03:00 [INF] Application is shutting down...
+2024-07-16 18:49:35.754 -03:00 [INF] User profile is available. Using 'C:\Users\Machado\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 18:49:36.192 -03:00 [INF] Entity Framework Core 6.0.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.32' with options: None
+2024-07-16 18:49:36.531 -03:00 [INF] Executed DbCommand (27ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-07-16 18:49:36.583 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-16 18:49:36.669 -03:00 [INF] Now listening on: https://localhost:7032
+2024-07-16 18:49:36.669 -03:00 [INF] Now listening on: http://localhost:5032
+2024-07-16 18:49:36.672 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 18:49:36.672 -03:00 [INF] Hosting environment: Development
+2024-07-16 18:49:36.672 -03:00 [INF] Content root path: D:\workspace\TesteJunto\src\JuntoApplication\
+2024-07-16 18:49:37.433 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/index.html - -
+2024-07-16 18:49:37.593 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/index.html - - - 200 - text/html;charset=utf-8 162.3135ms
+2024-07-16 18:49:37.599 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - -
+2024-07-16 18:49:37.601 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 2.1256ms
+2024-07-16 18:49:37.622 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - -
+2024-07-16 18:49:37.629 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.6237ms
+2024-07-16 18:49:37.673 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - -
+2024-07-16 18:49:37.734 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 60.8026ms
+2024-07-16 18:49:46.940 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7032/api/Login/login application/json 64
+2024-07-16 18:49:46.960 -03:00 [INF] Executing endpoint 'JuntoApplication.Controllers.LoginController.Login (JuntoApplication)'
+2024-07-16 18:49:46.977 -03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JuntoApplication.Model.Login) on controller JuntoApplication.Controllers.LoginController (JuntoApplication).
+2024-07-16 18:49:47.028 -03:00 [INF] Entity Framework Core 6.0.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.32' with options: None
+2024-07-16 18:49:47.032 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-16 18:49:47.073 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-07-16 18:49:47.093 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-07-16 18:49:47.105 -03:00 [INF] Executed action JuntoApplication.Controllers.LoginController.Login (JuntoApplication) in 124.6903ms
+2024-07-16 18:49:47.107 -03:00 [INF] Executed endpoint 'JuntoApplication.Controllers.LoginController.Login (JuntoApplication)'
+2024-07-16 18:49:47.109 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7032/api/Login/login application/json 64 - 200 - application/json;+charset=utf-8 169.1855ms
+2024-07-16 18:50:21.073 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/BaseUsers - -
+2024-07-16 18:50:21.077 -03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2024-07-16 18:50:21.084 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-07-16 18:50:21.085 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/api/BaseUsers - - - 401 0 - 11.9624ms
+2024-07-16 18:51:03.640 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/BaseUsers - -
+2024-07-16 18:51:03.641 -03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2024-07-16 18:51:03.643 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-07-16 18:51:03.644 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/api/BaseUsers - - - 401 0 - 3.4816ms
+2024-07-16 18:51:04.595 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/BaseUsers - -
+2024-07-16 18:51:04.596 -03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2024-07-16 18:51:04.596 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-07-16 18:51:04.597 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/api/BaseUsers - - - 401 0 - 2.4108ms
+2024-07-16 18:51:04.858 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/BaseUsers - -
+2024-07-16 18:51:04.859 -03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2024-07-16 18:51:04.859 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-07-16 18:51:04.860 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/api/BaseUsers - - - 401 0 - 2.1079ms
+2024-07-16 18:51:05.059 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/BaseUsers - -
+2024-07-16 18:51:05.059 -03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2024-07-16 18:51:05.060 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-07-16 18:51:05.061 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/api/BaseUsers - - - 401 0 - 1.8806ms
+2024-07-16 18:51:05.234 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/BaseUsers - -
+2024-07-16 18:51:05.235 -03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2024-07-16 18:51:05.235 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-07-16 18:51:05.236 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/api/BaseUsers - - - 401 0 - 1.9866ms
+2024-07-16 18:51:26.380 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/BaseUsers - -
+2024-07-16 18:51:26.381 -03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2024-07-16 18:51:26.381 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-07-16 18:51:26.382 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/api/BaseUsers - - - 401 0 - 2.0378ms
+2024-07-16 18:51:46.431 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/BaseUsers - -
+2024-07-16 18:51:46.431 -03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2024-07-16 18:51:46.432 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-07-16 18:51:46.433 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/api/BaseUsers - - - 401 0 - 2.0823ms
+2024-07-16 18:51:47.218 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/BaseUsers - -
+2024-07-16 18:51:47.219 -03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2024-07-16 18:51:47.219 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-07-16 18:51:47.220 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/api/BaseUsers - - - 401 0 - 2.0028ms
+2024-07-16 18:52:05.787 -03:00 [INF] Application is shutting down...
+2024-07-16 18:53:04.600 -03:00 [INF] User profile is available. Using 'C:\Users\Machado\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 18:53:05.034 -03:00 [INF] Entity Framework Core 6.0.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.32' with options: None
+2024-07-16 18:53:05.371 -03:00 [INF] Executed DbCommand (26ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-07-16 18:53:05.423 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-16 18:53:05.509 -03:00 [INF] Now listening on: https://localhost:7032
+2024-07-16 18:53:05.509 -03:00 [INF] Now listening on: http://localhost:5032
+2024-07-16 18:53:05.511 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 18:53:05.512 -03:00 [INF] Hosting environment: Development
+2024-07-16 18:53:05.512 -03:00 [INF] Content root path: D:\workspace\TesteJunto\src\JuntoApplication\
+2024-07-16 18:53:06.205 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/index.html - -
+2024-07-16 18:53:06.364 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/index.html - - - 200 - text/html;charset=utf-8 160.9611ms
+2024-07-16 18:53:06.372 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - -
+2024-07-16 18:53:06.374 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 2.0484ms
+2024-07-16 18:53:06.399 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - -
+2024-07-16 18:53:06.407 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.8228ms
+2024-07-16 18:53:06.455 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - -
+2024-07-16 18:53:06.513 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 58.2194ms
+2024-07-16 18:53:17.775 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/BaseUsers - -
+2024-07-16 18:53:17.779 -03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2024-07-16 18:53:17.833 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-07-16 18:53:17.834 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/api/BaseUsers - - - 401 0 - 59.5579ms
+2024-07-16 18:53:49.725 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7032/api/Login/login application/json 64
+2024-07-16 18:53:49.729 -03:00 [INF] Executing endpoint 'JuntoApplication.Controllers.LoginController.Login (JuntoApplication)'
+2024-07-16 18:53:49.746 -03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JuntoApplication.Model.Login) on controller JuntoApplication.Controllers.LoginController (JuntoApplication).
+2024-07-16 18:53:49.795 -03:00 [INF] Entity Framework Core 6.0.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.32' with options: None
+2024-07-16 18:53:49.800 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-16 18:53:49.837 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-07-16 18:53:49.850 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-07-16 18:53:49.863 -03:00 [INF] Executed action JuntoApplication.Controllers.LoginController.Login (JuntoApplication) in 113.2924ms
+2024-07-16 18:53:49.864 -03:00 [INF] Executed endpoint 'JuntoApplication.Controllers.LoginController.Login (JuntoApplication)'
+2024-07-16 18:53:49.867 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7032/api/Login/login application/json 64 - 200 - application/json;+charset=utf-8 141.9431ms
+2024-07-16 18:54:32.285 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/BaseUsers - -
+2024-07-16 18:54:32.286 -03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2024-07-16 18:54:32.288 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-07-16 18:54:32.289 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/api/BaseUsers - - - 401 0 - 3.7288ms
+2024-07-16 18:55:08.844 -03:00 [INF] Application is shutting down...
+2024-07-16 18:55:19.269 -03:00 [INF] User profile is available. Using 'C:\Users\Machado\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 18:55:19.723 -03:00 [INF] Entity Framework Core 6.0.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.32' with options: None
+2024-07-16 18:55:20.086 -03:00 [INF] Executed DbCommand (27ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-07-16 18:55:20.140 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-16 18:55:20.237 -03:00 [INF] Now listening on: https://localhost:7032
+2024-07-16 18:55:20.238 -03:00 [INF] Now listening on: http://localhost:5032
+2024-07-16 18:55:20.240 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 18:55:20.241 -03:00 [INF] Hosting environment: Development
+2024-07-16 18:55:20.241 -03:00 [INF] Content root path: D:\workspace\TesteJunto\src\JuntoApplication\
+2024-07-16 18:55:20.455 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/index.html - -
+2024-07-16 18:55:20.513 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/index.html - - - 404 0 - 59.8914ms
+2024-07-16 18:55:34.065 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/index.html - -
+2024-07-16 18:55:34.067 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/index.html - - - 404 0 - 1.6712ms
+2024-07-16 18:55:41.306 -03:00 [INF] Application is shutting down...
+2024-07-16 18:56:10.726 -03:00 [INF] User profile is available. Using 'C:\Users\Machado\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 18:56:11.166 -03:00 [INF] Entity Framework Core 6.0.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.32' with options: None
+2024-07-16 18:56:11.546 -03:00 [INF] Executed DbCommand (49ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-07-16 18:56:11.622 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-16 18:56:11.738 -03:00 [INF] Now listening on: https://localhost:7032
+2024-07-16 18:56:11.739 -03:00 [INF] Now listening on: http://localhost:5032
+2024-07-16 18:56:11.742 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 18:56:11.742 -03:00 [INF] Hosting environment: Development
+2024-07-16 18:56:11.743 -03:00 [INF] Content root path: D:\workspace\TesteJunto\src\JuntoApplication\
+2024-07-16 18:56:12.268 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/index.html - -
+2024-07-16 18:56:12.322 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/index.html - - - 404 0 - 55.8962ms
+2024-07-16 18:56:25.299 -03:00 [INF] User profile is available. Using 'C:\Users\Machado\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 18:56:25.729 -03:00 [INF] Entity Framework Core 6.0.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.32' with options: None
+2024-07-16 18:56:26.067 -03:00 [INF] Executed DbCommand (26ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-07-16 18:56:26.119 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-16 18:56:26.203 -03:00 [INF] Now listening on: https://localhost:7032
+2024-07-16 18:56:26.203 -03:00 [INF] Now listening on: http://localhost:5032
+2024-07-16 18:56:26.206 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 18:56:26.206 -03:00 [INF] Hosting environment: Development
+2024-07-16 18:56:26.206 -03:00 [INF] Content root path: D:\workspace\TesteJunto\src\JuntoApplication\
+2024-07-16 18:56:26.826 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/index.html - -
+2024-07-16 18:56:26.980 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/index.html - - - 200 - text/html;charset=utf-8 156.6431ms
+2024-07-16 18:56:26.988 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - -
+2024-07-16 18:56:26.990 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 2.0730ms
+2024-07-16 18:56:27.013 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - -
+2024-07-16 18:56:27.023 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 10.0806ms
+2024-07-16 18:56:27.075 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - -
+2024-07-16 18:56:27.131 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 56.3046ms
+2024-07-16 18:57:17.255 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7032/api/Login/login application/json 64
+2024-07-16 18:57:17.273 -03:00 [INF] Executing endpoint 'JuntoApplication.Controllers.LoginController.Login (JuntoApplication)'
+2024-07-16 18:57:17.289 -03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JuntoApplication.Model.Login) on controller JuntoApplication.Controllers.LoginController (JuntoApplication).
+2024-07-16 18:57:17.338 -03:00 [INF] Entity Framework Core 6.0.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.32' with options: None
+2024-07-16 18:57:17.342 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-16 18:57:17.379 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-07-16 18:57:17.401 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-07-16 18:57:17.414 -03:00 [INF] Executed action JuntoApplication.Controllers.LoginController.Login (JuntoApplication) in 120.5909ms
+2024-07-16 18:57:17.415 -03:00 [INF] Executed endpoint 'JuntoApplication.Controllers.LoginController.Login (JuntoApplication)'
+2024-07-16 18:57:17.417 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7032/api/Login/login application/json 64 - 200 - application/json;+charset=utf-8 161.8728ms
+2024-07-16 18:57:49.803 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/BaseUsers - -
+2024-07-16 18:57:49.806 -03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2024-07-16 18:57:49.839 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-07-16 18:57:49.840 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/api/BaseUsers - - - 401 0 - 37.5320ms
+2024-07-16 18:58:10.681 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/index.html - -
+2024-07-16 18:58:10.687 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/index.html - - - 200 - text/html;charset=utf-8 6.4180ms
+2024-07-16 18:58:10.696 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - -
+2024-07-16 18:58:10.697 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - -
+2024-07-16 18:58:10.698 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 0.7629ms
+2024-07-16 18:58:10.700 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 3.2576ms
+2024-07-16 18:58:10.776 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - -
+2024-07-16 18:58:10.780 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.9209ms
+2024-07-16 18:58:24.322 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7032/api/Login application/json 64
+2024-07-16 18:58:24.324 -03:00 [INF] Executing endpoint 'JuntoApplication.Controllers.LoginController.Login (JuntoApplication)'
+2024-07-16 18:58:24.327 -03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JuntoApplication.Model.Login) on controller JuntoApplication.Controllers.LoginController (JuntoApplication).
+2024-07-16 18:58:24.335 -03:00 [INF] Entity Framework Core 6.0.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.32' with options: None
+2024-07-16 18:58:24.338 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-16 18:58:24.343 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-07-16 18:58:24.345 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-07-16 18:58:24.346 -03:00 [INF] Executed action JuntoApplication.Controllers.LoginController.Login (JuntoApplication) in 18.0907ms
+2024-07-16 18:58:24.347 -03:00 [INF] Executed endpoint 'JuntoApplication.Controllers.LoginController.Login (JuntoApplication)'
+2024-07-16 18:58:24.347 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7032/api/Login application/json 64 - 200 - application/json;+charset=utf-8 25.0681ms
+2024-07-16 18:58:39.238 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/api/BaseUsers - -
+2024-07-16 18:58:39.239 -03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2024-07-16 18:58:39.240 -03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-07-16 18:58:39.241 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/api/BaseUsers - - - 401 0 - 3.0934ms
+2024-07-16 18:58:47.450 -03:00 [INF] Application is shutting down...
+2024-07-16 19:02:00.367 -03:00 [INF] User profile is available. Using 'C:\Users\Machado\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 19:02:00.807 -03:00 [INF] Entity Framework Core 6.0.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.32' with options: None
+2024-07-16 19:02:01.155 -03:00 [INF] Executed DbCommand (31ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-07-16 19:02:01.214 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-16 19:02:01.304 -03:00 [INF] Now listening on: https://localhost:7032
+2024-07-16 19:02:01.304 -03:00 [INF] Now listening on: http://localhost:5032
+2024-07-16 19:02:01.306 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 19:02:01.307 -03:00 [INF] Hosting environment: Development
+2024-07-16 19:02:01.307 -03:00 [INF] Content root path: D:\workspace\TesteJunto\src\JuntoApplication\
+2024-07-16 19:02:01.899 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/index.html - -
+2024-07-16 19:02:01.954 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/index.html - - - 404 0 - 57.6765ms
+2024-07-16 19:02:06.266 -03:00 [INF] Application is shutting down...
+2024-07-16 19:02:55.382 -03:00 [INF] User profile is available. Using 'C:\Users\Machado\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-07-16 19:02:55.820 -03:00 [INF] Entity Framework Core 6.0.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.32' with options: None
+2024-07-16 19:02:56.158 -03:00 [INF] Executed DbCommand (28ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2024-07-16 19:02:56.208 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-16 19:02:56.295 -03:00 [INF] Now listening on: https://localhost:7032
+2024-07-16 19:02:56.295 -03:00 [INF] Now listening on: http://localhost:5032
+2024-07-16 19:02:56.298 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-16 19:02:56.298 -03:00 [INF] Hosting environment: Development
+2024-07-16 19:02:56.299 -03:00 [INF] Content root path: D:\workspace\TesteJunto\src\JuntoApplication\
+2024-07-16 19:02:56.937 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/index.html - -
+2024-07-16 19:02:57.093 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/index.html - - - 200 - text/html;charset=utf-8 157.6165ms
+2024-07-16 19:02:57.100 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - -
+2024-07-16 19:02:57.102 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_framework/aspnetcore-browser-refresh.js - - - 200 12002 application/javascript;+charset=utf-8 2.0269ms
+2024-07-16 19:02:57.127 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/_vs/browserLink - -
+2024-07-16 19:02:57.135 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.7738ms
+2024-07-16 19:02:57.180 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - -
+2024-07-16 19:02:57.236 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7032/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 55.5582ms
+2024-07-16 19:03:05.986 -03:00 [INF] Request starting HTTP/2 POST https://localhost:7032/api/Login application/json 64
+2024-07-16 19:03:06.004 -03:00 [INF] Executing endpoint 'JuntoApplication.Controllers.LoginController.Login (JuntoApplication)'
+2024-07-16 19:03:06.021 -03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(JuntoApplication.Model.Login) on controller JuntoApplication.Controllers.LoginController (JuntoApplication).
+2024-07-16 19:03:06.070 -03:00 [INF] Entity Framework Core 6.0.32 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.32' with options: None
+2024-07-16 19:03:06.075 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-07-16 19:03:06.113 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2024-07-16 19:03:06.134 -03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-07-16 19:03:06.146 -03:00 [INF] Executed action JuntoApplication.Controllers.LoginController.Login (JuntoApplication) in 121.9835ms
+2024-07-16 19:03:06.148 -03:00 [INF] Executed endpoint 'JuntoApplication.Controllers.LoginController.Login (JuntoApplication)'
+2024-07-16 19:03:06.149 -03:00 [INF] Request finished HTTP/2 POST https://localhost:7032/api/Login application/json 64 - 200 - application/json;+charset=utf-8 163.5857ms
+2024-07-16 19:06:09.456 -03:00 [INF] Application is shutting down...
