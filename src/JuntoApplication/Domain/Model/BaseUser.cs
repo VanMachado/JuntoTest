@@ -13,16 +13,13 @@ namespace JuntoApplication.Model
         public string Name { get; set; }
         [Required]
         [StringLength(100)]
-        public string Email { get; set; }
-        [Required]
-        public string Password { get; set; }
+        public string Email { get; set; }               
 
-        public BaseUser(long id, string name, string email, string password)
+        public BaseUser(long id, string name, string email)
         {
             Id = id;
             Name = name;
-            Email = email;
-            Password = password;
+            Email = email;            
         }
     }
 }

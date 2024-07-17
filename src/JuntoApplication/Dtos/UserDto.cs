@@ -1,4 +1,5 @@
 ﻿using JuntoApplication.Dto.EnumsDto;
+using System.Text.Json.Serialization;
 
 namespace JuntoApplication.Dto
 {

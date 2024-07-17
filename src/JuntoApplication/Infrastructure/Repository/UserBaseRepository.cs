@@ -21,7 +21,7 @@ namespace JuntoApplication.Infrastructure.Repository
             _context = context;
             _userManager = userManager;
             _mapper = mapper;
-        }    
+        }
 
         public async Task<IEnumerable<UserDto>> FindAllAsync()
         {
@@ -60,23 +60,26 @@ namespace JuntoApplication.Infrastructure.Repository
                     var adminUser = new IdentityUser { UserName = userDto.Email, Email = userDto.Email };
                     var result = await _userManager.CreateAsync(adminUser, userDto.Password);
 
-                    if (result.Succeeded)
+                    if (!result.Succeeded)
                     {
-                        await _userManager.AddToRoleAsync(adminUser, "Admin");
+                        var errors = string.Join(", ", result.Errors.Select(e => e.Description));
+                        throw new Exception($"Failed to reset password: {errors}");
+                    }
+                    
+                    await _userManager.AddToRoleAsync(adminUser, "Admin");
 
-                        var adminClaims = new List<Claim>
+                    var adminClaims = new List<Claim>
                     {
                         new Claim(ClaimTypes.Email, userDto.Email),
                         new Claim(ClaimTypes.Role, "Admin"),
                     };
 
-                        await _userManager.AddClaimsAsync(adminUser, adminClaims);
+                    await _userManager.AddClaimsAsync(adminUser, adminClaims);
 
-                        _context.Add(userAdmin);
-                        await _context.SaveChangesAsync();
+                    _context.Add(userAdmin);
+                    await _context.SaveChangesAsync();
 
-                        return _mapper.Map<UserDto>(userAdmin);
-                    }
+                    return _mapper.Map<UserDto>(userAdmin);
                 }
 
                 var user = _mapper.Map<User>(userDto);
@@ -107,14 +110,16 @@ namespace JuntoApplication.Infrastructure.Repository
                     var token = await _userManager.GeneratePasswordResetTokenAsync(adminUser);
                     var result = await _userManager.ResetPasswordAsync(adminUser, token, password);
 
-                    if(!result.Succeeded)
-                        throw new Exception("Something went wrong when change password");
+                    if (!result.Succeeded)
+                    {
+                        var errors = string.Join(", ", result.Errors.Select(e => e.Description));
+                        throw new Exception($"Failed to reset password: {errors}");
+                    }
 
-                    return _mapper.Map<UserDto>(userAdmin);                     
+                    return _mapper.Map<UserDto>(userAdmin);
                 }
 
                 var user = await _context.Users.Where(x => x.Id == id).FirstOrDefaultAsync();
-                user.Password = password;
 
                 _context.Update(user);
                 await _context.SaveChangesAsync();
@@ -123,7 +128,6 @@ namespace JuntoApplication.Infrastructure.Repository
             }
             catch (Exception e)
             {
-
                 throw new Exception($"Something went wrong when calling API. Error: {e.Message}");
             }
         }

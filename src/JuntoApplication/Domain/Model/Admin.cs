@@ -8,8 +8,8 @@ namespace JuntoApplication.Model
         [Required]
         public Role Role { get; set; }
 
-        public Admin(long id, string name, string email,
-            string password, Role role) : base(id, name, email, password)
+        public Admin(long id, string name, 
+            string email, Role role) : base(id, name, email)
         {
             Role = role;
         }
