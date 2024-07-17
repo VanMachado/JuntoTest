@@ -21,12 +21,7 @@ namespace JuntoApplication.Infrastructure.Repository
             _context = context;
             _userManager = userManager;
             _mapper = mapper;
-        }
-
-        public Task<string> TokenGeneration(string userName, string password)
-        {
-            throw new NotImplementedException();
-        }
+        }    
 
         public async Task<IEnumerable<UserDto>> FindAllAsync()
         {
@@ -57,51 +52,80 @@ namespace JuntoApplication.Infrastructure.Repository
 
         public async Task<UserDto> CreateAsync(UserDto userDto)
         {
-            if (userDto.Role != null)
+            try
             {
-                var userAdmin = _mapper.Map<Admin>(userDto);
-                var adminUser = new IdentityUser { UserName = userDto.Email, Email = userDto.Email };
-                var result = await _userManager.CreateAsync(adminUser, userDto.Password);
+                if (userDto.Role != null)
+                {
+                    var userAdmin = _mapper.Map<Admin>(userDto);
+                    var adminUser = new IdentityUser { UserName = userDto.Email, Email = userDto.Email };
+                    var result = await _userManager.CreateAsync(adminUser, userDto.Password);
 
-                if (result.Succeeded)
-                {                    
-                    await _userManager.AddToRoleAsync(adminUser, "Admin");
-                                        
-                    var adminClaims = new List<Claim>
+                    if (result.Succeeded)
+                    {
+                        await _userManager.AddToRoleAsync(adminUser, "Admin");
+
+                        var adminClaims = new List<Claim>
                     {
                         new Claim(ClaimTypes.Email, userDto.Email),
-                        new Claim(ClaimTypes.Role, "Admin"),                    
+                        new Claim(ClaimTypes.Role, "Admin"),
                     };
-                                        
-                    await _userManager.AddClaimsAsync(adminUser, adminClaims);
 
-                    _context.Add(userAdmin);
-                    await _context.SaveChangesAsync();
+                        await _userManager.AddClaimsAsync(adminUser, adminClaims);
 
-                    return _mapper.Map<UserDto>(userAdmin);
-                }                
+                        _context.Add(userAdmin);
+                        await _context.SaveChangesAsync();
+
+                        return _mapper.Map<UserDto>(userAdmin);
+                    }
+                }
+
+                var user = _mapper.Map<User>(userDto);
+
+                _context.Add(user);
+                await _context.SaveChangesAsync();
+
+                return _mapper.Map<UserDto>(user);
             }
-
-            var user = _mapper.Map<User>(userDto);
-
-            _context.Add(user);
-            await _context.SaveChangesAsync();
-
-            return _mapper.Map<UserDto>(user);
+            catch (Exception e)
+            {
+                throw new Exception($"Somenthing went wrong when calling API. Error: {e.Message} ");
+            }
         }
 
         public async Task<UserDto> UpdateAsync(long id, string role, string password)
         {
-            var userRole = role.ToLower();
-            BaseUser user = userRole == "admin" ? await _context.Admins.Where(x => x.Id == id).FirstOrDefaultAsync() :
-                await _context.Users.Where(x => x.Id == id).FirstOrDefaultAsync();
+            try
+            {
+                if (role == "Admin")
+                {
+                    var userAdmin = await _context.Admins.Where(x => x.Id == id).FirstOrDefaultAsync();
+                    var adminUser = await _userManager.FindByEmailAsync(userAdmin.Email);
 
-            user.Password = password;
+                    if (adminUser == null)
+                        throw new Exception("Admin user not found in Identity");
 
-            _context.Update(user);
-            await _context.SaveChangesAsync();
+                    var token = await _userManager.GeneratePasswordResetTokenAsync(adminUser);
+                    var result = await _userManager.ResetPasswordAsync(adminUser, token, password);
 
-            return _mapper.Map<UserDto>(user);
+                    if(!result.Succeeded)
+                        throw new Exception("Something went wrong when change password");
+
+                    return _mapper.Map<UserDto>(userAdmin);                     
+                }
+
+                var user = await _context.Users.Where(x => x.Id == id).FirstOrDefaultAsync();
+                user.Password = password;
+
+                _context.Update(user);
+                await _context.SaveChangesAsync();
+
+                return _mapper.Map<UserDto>(user);
+            }
+            catch (Exception e)
+            {
+
+                throw new Exception($"Something went wrong when calling API. Error: {e.Message}");
+            }
         }
 
         public async Task<bool> DeleteAsync(long id, string role)
